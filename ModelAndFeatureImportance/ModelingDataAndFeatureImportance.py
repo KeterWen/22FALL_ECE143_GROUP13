@@ -5,22 +5,6 @@
 
 
 
-
-from IPython import get_ipython
-
-get_ipython().system('{sys.executable} -m pip install pandas')
-get_ipython().system('{sys.executable} -m pip install matplotlib')
-get_ipython().system('{sys.executable} -m pip install seaborn')
-get_ipython().system('{sys.executable} -m pip install numpy')
-get_ipython().system('{sys.executable} -m pip install sklearn')
-get_ipython().system('{sys.executable} -m pip install lazypredict')
-get_ipython().system('{sys.executable} -m pip install plotly.express')
-get_ipython().system('{sys.executable} -m pip install prettytable')
-get_ipython().system('{sys.executable} -m pip install six')
-get_ipython().system('{sys.executable} -m pip install pydotplus')
-get_ipython().system('{sys.executable} -m pip install graphviz')
-
-
 # In[41]:
 
 
