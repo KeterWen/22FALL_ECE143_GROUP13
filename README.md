@@ -2,6 +2,7 @@
 
 
 # Modeling and Feature And Importance
+To get this section to work, implement the modules located in the Import Modules section of this readme
 ## Determining the Model
 Use lazy classifier to determine most accurate model for predicting data out of set of 29 models
 ![image](https://user-images.githubusercontent.com/91287767/203299756-b7ee25eb-75b8-48ea-99c5-3b2962c95ffd.png)
@@ -39,7 +40,7 @@ Table for Math Decision Tree Classifier
 
 
 
-
+## Import Modules
 Please import the following modules to get the modeling feature importance to work:
 ![image](https://user-images.githubusercontent.com/91287767/203297270-d206e2c3-66db-4a51-9864-4876d05064f1.png)
 
