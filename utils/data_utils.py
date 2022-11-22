@@ -1,5 +1,6 @@
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
+import pandas as pd
 
 def generate_dataset(df_maths, df_port, random_seed=0):
     """
@@ -40,3 +41,12 @@ def generate_dataset(df_maths, df_port, random_seed=0):
     X_testp = ss.transform(X_testp)
 
     return X_trainm, X_testm, X_trainp, X_testp
+
+def read_csv(filename):
+    '''
+    collect the csv file data
+    :param filename: name of csv file 
+    :return: dataframe of csv file
+    '''
+    subject = pd.read_csv(filename, index_col=None)
+    return subject

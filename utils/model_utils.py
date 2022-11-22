@@ -25,17 +25,6 @@ from sklearn.tree import plot_tree
 import pydotplus
 
 
-
-
-def my_read_csv(filename):
-    '''
-    collect the csv file data
-    :param filename: name of csv file 
-    :return: dataframe of csv file
-    '''
-    subject = pd.read_csv(filename,index_col=None)
-    return subject
-
 def Ctgrs_to_nums(my_subject):
     '''
     Turn dataset categories into numbers
