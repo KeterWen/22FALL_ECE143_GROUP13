@@ -8,21 +8,13 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-import lazypredict
 from lazypredict.Supervised import LazyClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_regression
-from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
-from matplotlib import pyplot
 from prettytable import PrettyTable
-from six import StringIO 
-from IPython.display import Image  
 from sklearn.tree import plot_tree
-
-import pydotplus
 
 
 def Ctgrs_to_nums(my_subject):
@@ -45,8 +37,8 @@ def train_data(my_subject):
     :param my_subject: dataset of all student features and grades per class
     :return:
         my_subject_x_test_t: unedited all features of the students used to predict preformance, training set input
-         my_subject_x_test: all features of the students used to predict preformance, training set input
-         my_subject_y_train: The training set output, G# grades
+        my_subject_x_test: all features of the students used to predict preformance, training set input
+        my_subject_y_train: The training set output, G# grades
         my_subject_y_test: The test set output ie G# grades
         my_subject_x_train: all 30+ feature training set to determine grades
     '''
@@ -225,6 +217,7 @@ def visualize_tree(my_subject_x_train, my_subject_y_train, inst = 0):
               rounded=True, 
               fontsize=14)
     plt.show()
+
 def find_feature_imptnc(tree, my_subject_x, my_subject_x_train, my_subject_y_train):
     '''
     Finds and ranks which features are important on a plot
@@ -326,13 +319,9 @@ def model_and_feature2(mysubject, my_subject_name):
         plot_feature_imptnc(names, values, my_subject_name, my_model_name)
         table_feature_imptnc(sorted_feature_importance, names)
 
-'''
-math = my_read_csv('Maths.csv')
-portuguese = my_read_csv('Portuguese.csv')
-model_and_feature2(math, 'Math')
-model_and_feature2(portuguese, 'Portuguese')
-'''
-
-
-
-
+if __name__ == "__main__":
+    pass
+    # math = data_utils.read_csv('Maths.csv')
+    # portuguese = data_utils.read_csv('Portuguese.csv')
+    # model_and_feature2(math, 'Math')
+     #model_and_feature2(portuguese, 'Portuguese')

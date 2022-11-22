@@ -1,14 +1,11 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import plotly.express as px
 import numpy as np
 import os
 import warnings
 
 from IPython.display import Image, display
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 from matplotlib.pyplot import MultipleLocator
@@ -329,6 +326,27 @@ def plot_bar_Fedu_vs_G(df_maths, df_port, save_path='./plot/bar_Fedu_vs_G.png'):
     plt.legend(loc='upper right', fontsize='small')
     plt.savefig(save_path)
     plt.show()
+    plt.close()
+
+def plot_box(df, x, y, fig_name, show=False):
+    """
+    plot the box 
+    :df: np.dataframe of data
+    :x: Column name in given df, name of x axis
+    :y: Column name in given df, name of y axis
+    """
+    fig, ax = plt.subplots(len(y), len(x))
+
+    cnt = 0
+
+    for x_col in x:
+        for y_col in y:
+            sns.barplot(df, ax=ax[cnt], x = x_col, y = y_col)
+            cnt += 1
+
+    plt.savefig(fig_name)
+    if show:
+        plt.show()
     plt.close()
 
 if __name__ == '__main__':
