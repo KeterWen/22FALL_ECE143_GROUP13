@@ -27,25 +27,4 @@ alchohol consumption ranked in influencing grades out of all factors and how muc
 
 
 Please import the following modules to get the modeling feature importance to work:
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import plotly.express as px
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler,LabelEncoder
-import lazypredict
-from lazypredict.Supervised import LazyClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import make_regression
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.ensemble import RandomForestRegressor
-from matplotlib import pyplot
-from prettytable import PrettyTable
-from six import StringIO 
-from IPython.display import Image  
-from sklearn.tree import plot_tree
-
-import pydotplus
+![image](https://user-images.githubusercontent.com/91287767/203297270-d206e2c3-66db-4a51-9864-4876d05064f1.png)
