@@ -7,7 +7,7 @@ import seaborn as sns
 import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler,LabelEncoder
+from sklearn.preprocessing import StandardScaler, LabelEncoder
 import lazypredict
 from lazypredict.Supervised import LazyClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -68,7 +68,8 @@ def lzy_clsfy_models(my_subject_x_test, my_subject_y_train, my_subject_y_test, m
     :param my_subject_x_train: all 30+ feature training set to determine grades
     :return: model_my_subject: dataset of all student features and grades per class model of training data
     '''
-    clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric = None,classifiers = 'all')
+    clf = LazyClassifier(verbose=0, ignore_warnings=True, custom_metric = None, classifiers = 'all')
+    
     model_my_subject,prediction_my_subject = clf.fit(my_subject_x_train, my_subject_x_test, my_subject_y_train, my_subject_y_test)
     return model_my_subject
 
