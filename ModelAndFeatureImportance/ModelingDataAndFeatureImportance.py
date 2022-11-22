@@ -336,7 +336,7 @@ def table_feature_imptnc(sorted_feature_importance, names):
 # In[69]:
 
 
-def model_and_feature(mysubject, my_subject_name):
+def model_and_feature2(mysubject, my_subject_name):
     '''
     Calls host of functions to run the model, Uses trhe model to predict grades, visualizes model
     uses model to determine feature importance, plot feature importance, table to rank feature importance
@@ -366,11 +366,12 @@ def model_and_feature(mysubject, my_subject_name):
         plot_feature_imptnc(names, values, my_subject_name, my_model_name)
         table_feature_imptnc(sorted_feature_importance, names)
 
-
+'''
 math = my_read_csv('Maths.csv')
 portuguese = my_read_csv('Portuguese.csv')
-model_and_feature(math, 'Math')
-model_and_feature(portuguese, 'Portuguese')
+model_and_feature2(math, 'Math')
+model_and_feature2(portuguese, 'Portuguese')
+'''
 
 
 # In[ ]:
