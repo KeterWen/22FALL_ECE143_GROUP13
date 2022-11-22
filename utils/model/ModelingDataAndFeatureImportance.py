@@ -1,14 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
-
-
-
-# In[41]:
-
-
-
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -58,10 +50,6 @@ def Ctgrs_to_nums(my_subject):
         my_subject[column] = LEncode.fit_transform(my_subject[column])
     return my_subject
 
-
-# In[6]:
-
-
 def train_data(my_subject):
     '''
     Train datasets to predict future grades based off current information
@@ -96,9 +84,6 @@ def lzy_clsfy_models(my_subject_x_test, my_subject_y_train, my_subject_y_test, m
     return model_my_subject
 
 
-# In[7]:
-
-
 def plt_models(model_subject, my_subject_name='Math'):
     '''
     Plot accuracy of all possible models that evaluate dataset
@@ -113,9 +98,6 @@ def plt_models(model_subject, my_subject_name='Math'):
     plt.xticks(rotation=90)
     plt.title('Accuracy for %s Model' %my_subject_name)
     plt.show()
-
-
-# In[32]:
 
 
 def train_data_no_grades(my_subject):
@@ -139,9 +121,6 @@ def train_data_no_grades(my_subject):
     my_subject_x_train = standScale.fit_transform(my_subject_x_train_t)
     my_subject_x_test = standScale.transform(my_subject_x_test)
     return my_subject_x_train_t, my_subject_x_test, my_subject_y_train,         my_subject_y_test, my_subject_x_train, my_subject_x, my_subject_y
-
-
-# In[51]:
 
 
 #take the most successful prediction model and compare predicted data versus actual data
@@ -216,9 +195,6 @@ def plot_error_rate(predictions, my_subject_y_test, subject, model):
     plt.ylabel("Error Rate Percentage")
     # zero means perfect correlation
     plt.show()
-
-
-# In[68]:
 
 
 def determine_tree(inst = 0):
@@ -312,9 +288,6 @@ def plot_feature_imptnc(names, values, my_subject_name='Portuguese', model='Rand
     plt.show()
 
 
-# In[12]:
-
-
 def table_feature_imptnc(sorted_feature_importance, names):
     '''
     Create table of the most important features and rank alcohol among features
@@ -331,9 +304,6 @@ def table_feature_imptnc(sorted_feature_importance, names):
     DalcImportance =  str("%.2f" % (sorted_feature_importance.get('Dalc') *100))
     print("Weekend Alchohol consumption ranks #" + str(rankWalc) + " and determines "      + WalcImportance + " Percent of the overall grade")
     print("WeekDAY Alchohol consumption ranks #" + str(rankDalc) + " and determines "      + DalcImportance + " Percent of the overall grade")
-
-
-# In[69]:
 
 
 def model_and_feature2(mysubject, my_subject_name):
@@ -372,15 +342,6 @@ portuguese = my_read_csv('Portuguese.csv')
 model_and_feature2(math, 'Math')
 model_and_feature2(portuguese, 'Portuguese')
 '''
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
