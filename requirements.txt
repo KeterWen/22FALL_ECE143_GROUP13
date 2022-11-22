@@ -7,3 +7,5 @@ matplotlib==3.6.0
 matplotlib-inline==0.1.6
 prettytable==3.5.0
 plotly==5.11.0
+lazypredict==0.2.12
+pydotplus==2.0.2
