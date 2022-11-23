@@ -10,8 +10,6 @@ ECE143 (Fall 2022) Course Project by: Linfeng Wen, Liyang Ru, Yuzhao Chen, Amber
 - Improve students' studying achievement is a concern of every school and parents. In addition to learning efficiency in school, drinking habits and family factors also have a great impact on students' learning. This project aims to evaluate the impact of these factors on studying and provide guidance to students.
 
 # Data prepossing and preliminary analysis
-## Import Modules
-
 ## Installation
 
 Here are the requirements for running all the project codes.
@@ -43,9 +41,7 @@ conda activate alcohol_analysis
 pip install requirements.txt
 ```
 
-To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
-### ECE143_visualization.ipynb 
-file to run all code
+To get this project to work, implement the modules located in the Import Modules section of this readme. Please run the main <strong>ECE143_visualization.ipynb</strong> file to run all code
 
 ## Dataset
 - Kaggle: Alcohol Effects on Study (https://www.kaggle.com/datasets/whenamancodes/alcohol-effects-on-study)
@@ -91,11 +87,6 @@ _Math grade improvements_
 _Bar chart of go out with friends vs. workday alcohol_
 
 # Modeling and Feature Importance
-
-To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
-### ECE143_visualization.ipynb 
-file to run all code
-
 ## Determining the Model
 
 - Use lazy classifier to determine most accurate model for predicting data out of set of 29 models
