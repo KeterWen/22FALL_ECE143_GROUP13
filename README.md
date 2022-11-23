@@ -38,28 +38,38 @@ In order to analyze how alcohol and other factors affect academic performance, E
 
 ### Distribution
 - For both math grades and portuguese grades, shows the histogram about distribution of final grade, workday alcohol consumption and other non-alcohol features which is important.
-
-* _Distribution of final grades_
+<br>
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/plot/hist_G3.png)
+<br>
+_Distribution of final grades_
 
 ### Heatmap
 - In order to show the Pearson's correlations between different comparable features.
+<br>
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/maths_heatmap.png)
+<br>
 _Heatmap of features in math.csv_
 
 ### Alcohol Effect on Academic Performance
 - Show the relationships between grades and workday/weekend alcohol consumption for analysis the degree of association.
+<br>
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_Dalc_vs_G.png)
+<br>
 _Bar chart of workday alcohol vs. grades_
 
 ### Academic improvement
 - Exploration between the difference of each grades.
+<br>
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/plot/math_improvment.png)
+<br>
 _Math grade improvements_
 
 ### Non-Alcohol Effect on Academic Performance
 - Show the relationships between other non-alcohol features for analysis the degree of association.
+
+<br>
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_goout_vs_DWalc.png)
+<br>
 _Bar chart of go out with friends vs. workday alcohol_
 
 # Modeling and Feature Importance
