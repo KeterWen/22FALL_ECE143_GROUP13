@@ -4,7 +4,7 @@
 # Project target
 - Analyze the impact of students' drinking habits and other factors on students’ academic performance;
 - Use statistical and  ML models to support conclusions and try to find some potential interactions among given variables.
-- 
+
 # Future applications
 - Improve students' studying achievement is a concern of every school and parents. In addition to learning efficiency in school, drinking habits and family factors also have a great impact on students' learning. This project aims to evaluate the impact of these factors on studying and provide guidance to students.
 
@@ -38,8 +38,9 @@ In order to analyze how alcohol and other factors affect academic performance, E
 
 ### Distribution
 - For both math grades and portuguese grades, shows the histogram about distribution of final grade, workday alcohol consumption and other non-alcohol features which is important.
+
+* _Distribution of final grades_
 ![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/plot/hist_G3.png)
-_Distribution of final grades_
 
 ### Heatmap
 - In order to show the Pearson's correlations between different comparable features.
