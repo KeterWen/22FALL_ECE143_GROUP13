@@ -1,5 +1,6 @@
 # 22FALL_ECE143_GROUP13
 # Alcohol Effects On Academic Performance
+ECE143 (Fall 2022) Course Project by: Linfeng Wen, Liyang Ru, Yuzhao Chen, Amber Szulc, Shril Mody
 
 # Project target
 - Analyze the impact of students' drinking habits and other factors on students’ academic performance;
@@ -9,20 +10,37 @@
 - Improve students' studying achievement is a concern of every school and parents. In addition to learning efficiency in school, drinking habits and family factors also have a great impact on students' learning. This project aims to evaluate the impact of these factors on studying and provide guidance to students.
 
 # Data prepossing and preliminary analysis
-
-Make sure all the packages and library in
-### requirements.txt
-installed.
-
 ## Import Modules
 
-Please import the following modules to get the modeling feature importance to work:
+## Installation
 
-![image](https://user-images.githubusercontent.com/91287767/203297270-d206e2c3-66db-4a51-9864-4876d05064f1.png)
-
-To install the following modules, run the following code - 
+Here are the requirements for running all the project codes.
 ```
-pip install -r requirements.txt
+pandas==1.5.1
+ipython==8.6.0
+sklearn==0.0
+seaborn==0.12.1
+numpy==1.23.5
+matplotlib==3.6.0
+matplotlib-inline==0.1.6
+prettytable==3.5.0
+plotly==5.11.0
+lazypredict==0.2.12
+pydotplus==2.0.2
+```
+As a recommended practice, you can create virtual environment and install the required packages in the following way
+```
+# Clone the repo
+git clone https://github.com/KeterWen/22FALL_ECE143_GROUP13.git
+
+# Create virtual env
+conda create -n alcohol_analysis python=3.8 
+
+# Activate the virual env
+conda activate alcohol_analysis
+
+# cd into the root folder and install requirements
+pip install requirements.txt
 ```
 
 To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
