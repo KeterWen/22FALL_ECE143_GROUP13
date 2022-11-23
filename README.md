@@ -1,7 +1,67 @@
 # 22FALL_ECE143_GROUP13
 # Alcohol Effects On Academic Performance
 
-# Modeling and Feature And Importance
+# Project target
+- Analyze the impact of students' drinking habits and other factors on students’ academic performance;
+- Use statistical and  ML models to support conclusions and try to find some potential interactions among given variables.
+- 
+# Future applications
+- Improve students' studying achievement is a concern of every school and parents. In addition to learning efficiency in school, drinking habits and family factors also have a great impact on students' learning. This project aims to evaluate the impact of these factors on studying and provide guidance to students.
+
+# Data prepossing and preliminary analysis
+
+Make sure all the packages and library in
+### requirements.txt
+installed.
+
+## Import Modules
+
+Please import the following modules to get the modeling feature importance to work:
+
+![image](https://user-images.githubusercontent.com/91287767/203297270-d206e2c3-66db-4a51-9864-4876d05064f1.png)
+
+To install the following modules, run the following code - 
+```
+pip install -r requirements.txt
+```
+
+To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
+### ECE143_visualization.ipynb 
+file to run all code
+
+## Dataset
+- Kaggle: Alcohol Effects on Study (https://www.kaggle.com/datasets/whenamancodes/alcohol-effects-on-study)
+- This dataset contains 1044 student exam scores of math and portuguese and their personal information collected by two Portuguese secondary schools. Each piece of data includes 33 different students’ personal information, including alcohol usage condition, student grades, family status (parental education level and job), and living habits (study time, drinking habits, etc.)
+
+## Dataset Analysis and plots
+In order to analyze how alcohol and other factors affect academic performance, Exploratory Data Analysis (EDA) will play a critical role in discovering these potential relationships. We will use the histogram, heatmap, and scatterplot to help intuitively present the distribution of different factors including alcohol usage, sex, age, etc. Besides, some charts and quantitative indicators including the Pearson correlation coefficient or mutual information will be leveraged to help measure the correlation between the factors listed above and the final academic performance.
+
+### Distribution
+- For both math grades and portuguese grades, shows the histogram about distribution of final grade, workday alcohol consumption and other non-alcohol features which is important.
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/plot/hist_G3.png)
+_Distribution of final grades_
+
+### Heatmap
+- In order to show the Pearson's correlations between different comparable features.
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/maths_heatmap.png)
+_Heatmap of features in math.csv_
+
+### Alcohol Effect on Academic Performance
+- Show the relationships between grades and workday/weekend alcohol consumption for analysis the degree of association.
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_Dalc_vs_G.png)
+_Bar chart of workday alcohol vs. grades_
+
+### Academic improvement
+- Exploration between the difference of each grades.
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/plot/math_improvment.png)
+_Math grade improvements_
+
+### Non-Alcohol Effect on Academic Performance
+- Show the relationships between other non-alcohol features for analysis the degree of association.
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_goout_vs_DWalc.png)
+_Bar chart of go out with friends vs. workday alcohol_
+
+# Modeling and Feature Importance
 
 To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
 ### ECE143_visualization.ipynb 
@@ -62,14 +122,4 @@ _Table for Math (Decision Tree Classifier)_
 
 
 
-## Import Modules
-
-Please import the following modules to get the modeling feature importance to work:
-
-![image](https://user-images.githubusercontent.com/91287767/203297270-d206e2c3-66db-4a51-9864-4876d05064f1.png)
-
-To install the following modules, run the following code - 
-```
-pip install -r requirements.txt
-```
 
