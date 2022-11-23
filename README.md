@@ -82,9 +82,9 @@ _Math grade improvements_
 - Show the relationships between other non-alcohol features for analysis the degree of association.
 
 
-![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_goout_vs_DWalc.png)
+![](https://github.com/KeterWen/22FALL_ECE143_GROUP13/blob/main/utils/plotter/plot/bar_studytime_vs_G.png)
 <br>
-_Bar chart of go out with friends vs. workday alcohol_
+_Bar chart of study time vs. grades_
 
 # Modeling and Feature Importance
 ## Determining the Model
