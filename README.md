@@ -3,7 +3,9 @@
 
 # Modeling and Feature And Importance
 
-To get this section to work, implement the modules located in the Import Modules section of this readme
+To get this section to work, implement the modules located in the Import Modules section of this readme. Please run the main
+### ECE143_visualization.ipynb 
+file to run all code
 
 ## Determining the Model
 
