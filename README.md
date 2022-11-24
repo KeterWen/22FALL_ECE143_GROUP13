@@ -9,6 +9,22 @@ ECE143 (Fall 2022) Course Project by: Linfeng Wen, Liyang Ru, Yuzhao Chen, Amber
 # Future applications
 - Improve students' studying achievement is a concern of every school and parents. In addition to learning efficiency in school, drinking habits and family factors also have a great impact on students' learning. This project aims to evaluate the impact of these factors on studying and provide guidance to students.
 
+# File Sturcture
+## ECE143_visualization.ipynb
+Main entrance of our project, run this notebook to reproduce the result in the slides.
+
+## utils
+Contains all the .py files, used by our main .ipynb notebook. data_util.py, model_util.py, plot_util.py are three moduels dived by their function. 
+
+## plot
+Some charts used in our presentation.
+
+## data
+Math and Portugese data collected from kaggle.
+
+## documents
+Proposal doc file and pdf.
+
 # Data prepossing and preliminary analysis
 ## Installation
 
